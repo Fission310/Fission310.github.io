@@ -17,6 +17,11 @@ export default function Home() {
       <main className={home.main}>
         
         <div className={home.titleContainer}>
+          <div className={home.vertnum}>
+            <span>3</span>
+            <span>1</span>
+            <span>0</span>
+          </div>
           <h1 className={home.title}>
             Stuy Fission
           </h1>
@@ -24,6 +29,14 @@ export default function Home() {
             <video muted loop name="Video Name" className={home.bg} id="vid">
               <source src="bg.mp4" />
             </video>
+          </div>
+          <div className={home.subtitlecontainer}>
+            <h2 className={home.subtitlel}>
+              Gracious Professionalism
+            </h2>
+            <h2 className={home.subtitler}>
+              Fortune favors the brave
+            </h2>
           </div>
         </div>
         
