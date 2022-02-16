@@ -16,15 +16,28 @@ export default function Home() {
 
       <main className={home.main}>
         
-        <div className={home.titleContainer}>
+        <div className={home.titlecontainer}>
           <div className={home.vertnum}>
             <span>3</span>
             <span>1</span>
             <span>0</span>
           </div>
-          <h1 className={home.title}>
-            Stuy Fission
-          </h1>
+          <div className={home.topcontainer}>
+            <h1 className={home.title}>
+              Stuy Fission
+            </h1>
+            <div className={home.estyear}>
+              <span className={home.est}>
+                <span>E</span>
+                <span>S</span>
+                <span>T</span>
+              </span>
+              <span className={home.year}>
+                <span>20</span>
+                <span className={home.spcolor}>08</span>
+              </span>
+            </div>
+          </div>
           <div className={home.bgBorder}>
             <video muted loop name="Video Name" className={home.bg} id="vid">
               <source src="bg.mp4" />
@@ -39,6 +52,7 @@ export default function Home() {
             </h2>
           </div>
         </div>
+        <span className={home.caret}>&#8964;</span>
         
       </main>
 
