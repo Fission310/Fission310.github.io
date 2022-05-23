@@ -54,7 +54,7 @@
     margin-left: 0;
     order: 1;
   }
-  font-size: 0.3em !important;
+  font-size: 5.7px !important;
 }
 .main {
   .bgBorder {
@@ -98,6 +98,7 @@
   .topcontainer {
     .estyear {
       .est {
+        font-size: 1em;
         display: flex;
         flex-direction: column;
         margin-left: -7.5em;
@@ -147,6 +148,7 @@
 
   .main {
     .bgBorder {
+      height: auto;
       width: 60em;
       border: 4px solid white;
       .bgimg {
