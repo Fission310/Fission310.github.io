@@ -3,30 +3,32 @@
   color: white;
 }
 .titlecontainer {
-  font-family: "Press Start 2P";
+  font-family: var(--p2-font);
 }
+
 .topcontainer {
   .estyear {
     .est {
       display: flex;
       flex-direction: column;
-      margin-left: -7.5em;
-      margin-top: -1em;
-      line-height: 1.6em;
+      font-size: 0.6rem;
+      margin-left: -5.2em;
+      margin-top: -1.2em;
+      line-height: 1.3em;
     }
     .year {
       .spcolor {
         color: #e06666;
       }
       position: absolute;
-      margin-left: -1.6em;
+      margin-left: -1.65em;
       margin-top: -0.5em;
       line-height: 0.8em;
-      font-size: 4em;
+      font-size: 1.5em;
       display: flex;
       flex-direction: column;
     }
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--orbitron-font);
     display: flex;
   }
   display: flex;
@@ -34,7 +36,7 @@
 }
 .title {
   text-align: left !important;
-  font-size: 3.5em;
+  font-size: 1.25em;
   line-height: 0;
   padding-bottom: 0.2rem;
 }
@@ -52,15 +54,23 @@
     margin-left: 0;
     order: 1;
   }
-  font-size: 0.8em !important; // no workie
+  font-size: 0.3em !important;
 }
-
 .main {
   .bgBorder {
-    width: 60em;
+    margin: auto;
+    height: 33.3em;
+    width: 19em;
     border: 4px solid white;
     .bg {
-      width: 100%;
+      display: none;
+    }
+    .bgimg {
+      position: absolute;
+      margin-left: -110px;
+      margin-top: 115px;
+      width: 520px;
+      transform: rotate(90deg);
     }
   }
   min-height: 100vh;
@@ -72,28 +82,151 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
 .vertnum {
   span {
-    padding-block: 0.8rem;
+    padding-block: 0.4rem;
   }
   position: absolute;
-  margin-left: -1.2em;
-  margin-top: 0.85em;
-  font-size: 5em;
+  margin-left: -2.2rem;
+  margin-top: 0.84em;
+  font-size: 1.8em;
   display: flex;
   flex-direction: column;
 }
+
+@media only screen and (min-width: 1200px) {
+  .topcontainer {
+    .estyear {
+      .est {
+        display: flex;
+        flex-direction: column;
+        margin-left: -7.5em;
+        margin-top: -1em;
+        line-height: 1.6em;
+      }
+      .year {
+        .spcolor {
+          color: #e06666;
+        }
+        position: absolute;
+        margin-left: -1.6em;
+        margin-top: -0.5em;
+        line-height: 0.8em;
+        font-size: 4em;
+        display: flex;
+        flex-direction: column;
+      }
+      font-family: var(--orbitron-font);
+      display: flex;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+  .title {
+    text-align: left !important;
+    font-size: 3.5em;
+    line-height: 0;
+    padding-bottom: 0.2rem;
+  }
+  .subtitlecontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subtitlecontainer h2 {
+    .subtitler {
+      // margin
+      margin-right: 0;
+      order: 2;
+    }
+    .subtitlel {
+      margin-left: 0;
+      order: 1;
+    }
+    font-size: 0.8em !important; // no workie
+  }
+
+  .main {
+    .bgBorder {
+      width: 60em;
+      border: 4px solid white;
+      .bgimg {
+        display: none;
+      }
+      .bg {
+        display: block;
+        width: 100%;
+      }
+    }
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vertnum {
+    span {
+      padding-block: 0.8rem;
+    }
+    position: absolute;
+    margin-left: -1.2em;
+    margin-top: 0.85em;
+    font-size: 5em;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .caret {
   padding-block: 0.4em;
   font-size: 4em;
   color: #e38585;
+}
+
+.gofundme {
+  h1 {
+    font-family: var(--p2-font);
+    letter-spacing: 3px;
+    font-size: 2.5em;
+  }
+  p {
+    font-family: var(--orbitron-font);
+    letter-spacing: 2px;
+    font-size: 1.5em;
+  }
+  button {
+    cursor: pointer;
+    font-size: 1.2rem;
+
+    border-style: solid;
+    border-color: #e06666;
+    border-width: 3px;
+    padding-block: 0.7rem;
+    border-radius: 1.5rem;
+    width: 10.5rem;
+    color: white;
+    background-color: black;
+
+    margin-top: 0.6rem;
+  }
+  button:hover {
+    background-color: #e0666660;
+  }
+  padding-top: 4.5em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .gofundme {
+    h1 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1em;
+      padding-inline: 1em;
+    }
+    padding-top: 0.4em;
+  }
 }
