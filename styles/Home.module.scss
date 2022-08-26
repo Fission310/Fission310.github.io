@@ -188,10 +188,11 @@
   color: #e38585;
 }
 
-.gofundme {
+.block {
   h1 {
     font-family: var(--p2-font);
-    letter-spacing: 3px;
+    line-height: 1.1em;
+    letter-spacing: 2.5px;
     font-size: 2.5em;
   }
   p {
@@ -215,14 +216,15 @@
     margin-top: 0.6rem;
   }
   button:hover {
-    background-color: #e0666660;
+    background-color: #e06666;
   }
-  padding-top: 4.5em;
+  max-width: 80%;
+  padding-block: 4.5em;
   text-align: center;
 }
 
 @media only screen and (max-width: 1200px) {
-  .gofundme {
+  .block {
     h1 {
       font-size: 1.8em;
     }

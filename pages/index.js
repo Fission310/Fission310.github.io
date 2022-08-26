@@ -54,7 +54,13 @@ export default function Home() {
         </div>
         <span className={home.caret}>&#8964;</span>
 
-        <div className={home.gofundme}>
+        <div className={home.block}>
+          <h1>Stuy Fission 310</h1>
+          <p>Award-winning robotics team based in lower west Manhattan since 2008</p>
+          <p>Comprised of dedicated Stuyvesant High School students who not only wish to succeed in competition but also to spread the values of FIRST.</p>
+        </div>
+
+        <div className={home.block}>
           <h1>GoFundMe</h1>
           <p>Help send us to MTI 2022! Support us at our GoFundMe!</p>
           <a href="https://www.gofundme.com/f/send-ftc-310-and-479-to-mti?utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer" target="_blank" rel="noopener noreferrer"><button>Support</button></a>
