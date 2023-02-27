@@ -59,12 +59,6 @@ export default function Home() {
           <p>Award-winning robotics team based in lower west Manhattan since 2008</p>
           <p>Comprised of dedicated Stuyvesant High School students who not only wish to succeed in competition but also to spread the values of FIRST.</p>
         </div>
-
-        <div className={home.block}>
-          <h1>GoFundMe</h1>
-          <p>Help send us to MTI 2022! Support us at our GoFundMe!</p>
-          <a href="https://www.gofundme.com/f/send-ftc-310-and-479-to-mti?utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer" target="_blank" rel="noopener noreferrer"><button>Support</button></a>
-        </div>
         
       </main>
 
