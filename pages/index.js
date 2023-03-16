@@ -55,6 +55,12 @@ export default function Home() {
         <span className={home.caret}>&#8964;</span>
 
         <div className={home.block}>
+          <h1>MTI Submission 2023</h1>
+          <p>252 points, the maximum score with a 1+5 auto!</p>
+          <a href="https://youtu.be/uDNVBNtvkGM" target="_blank" rel="noopener noreferrer"><button>Watch on YT</button></a>
+        </div>
+
+        <div className={home.block}>
           <h1>Stuy Fission 310</h1>
           <p>Award-winning robotics team based in lower west Manhattan since 2008</p>
           <p>Comprised of dedicated Stuyvesant High School students who not only wish to succeed in competition but also to spread the values of FIRST.</p>
